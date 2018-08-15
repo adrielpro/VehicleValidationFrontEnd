@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: #f0f0f0;
+  font-family: Roboto, 'Helvetice New', 'Arial', sans-serif
+}
+.container
+{
+ display: flex;
+ justify-content: space-between;
+
+}
+
+.container > * {
+  width: 100%;
+}
+
+
+.Invalid {
+  background: #F44336;
+}
+
+.Valid{
+  background: #4CAF50;
+}
+
+.mat-simple-snackbar-action
+{
+  color: #fff;
+}
+
+
+.main_logo{
+width: auto;
+height: 100%;
+}

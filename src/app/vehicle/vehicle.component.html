@@ -1,0 +1,30 @@
+  <mat-card-header>
+      <mat-card-title>{{title}}</mat-card-title>
+      <mat-card-subtitle>{{subtitle}}</mat-card-subtitle>
+  </mat-card-header>
+  <form #vehicleForm="ngForm" (ngSubmit)="onSubmit()">
+
+    <mat-form-field appearance="standard" class="mat-form-field-flex">
+        <mat-label>Vehicle Id</mat-label>
+      <input matInput  placeholder="VehicleId" type="number" class="form-control" id="VehicleId" [(ngModel)]="model.VehicleId" name="VehicleId">
+    </mat-form-field>
+
+    <mat-form-field appearance="standard" class="mat-form-field-flex">
+        <mat-label>Type</mat-label>
+      <input matInput placeholder="Type" type="text" class="form-control" id="Type" [(ngModel)]="model.Type" name="Type">
+    </mat-form-field>
+
+    <mat-form-field appearance="standard" class="mat-form-field-flex">
+        <mat-label>Manufacturer</mat-label>
+      <input type="text"  matInput placeholder="Manufacturer" class="form-control" id="ManufacturerNameShort" [(ngModel)]="model.ManufacturerNameShort" name="ManufacturerNameShort">
+    </mat-form-field>
+
+    <mat-form-field appearance="standard" class="mat-form-field-flex">
+        <mat-label>Price</mat-label>
+      <input matInput  placeholder="Price" type="number" class="form-control" id="Price" [(ngModel)]="model.Price" name="Price">
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit" class="btn btn-success">Submit</button>
+
+  </form>
+
+
